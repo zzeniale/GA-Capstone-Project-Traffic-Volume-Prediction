@@ -38,7 +38,7 @@ The goal of this project is to use deep learning and image processing techniques
 #### Summary of Findings & Recommendations
 ---
 <p align="center">
-    <img src="./graphics/background_sub_predictions.gif" width=700>
+    <img src="./graphics/background_sub_pred.gif" width=700>
 </p>
 
 The low resolution of the images hindered the training of an object detection model. As such, in this project I used a background subtraction algorithm (as shown in the figure above) followed by several machine learning and deep learning approaches to predict the number of cars in each image.
