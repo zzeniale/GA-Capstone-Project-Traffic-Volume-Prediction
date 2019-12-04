@@ -5,7 +5,7 @@ Estimation of traffic conditions is important in allowing commuters to decide on
 
 Currently, commuters rely on a list of websites that display static images from the [same traffic cameras API](https://data.gov.sg/dataset/traffic-images) offered by LTA (e.g. [[1]](https://www.onemotoring.com.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/kje.html#trafficCameras), [[2]](http://www.jalanow.com/johor-singapore-live-traffic-cam.htm), [[3]](https://www.sgmytaxi.com/traffic-camera/), [[4]](http://www.checkpoint.sg/)), thus requiring them to guess how many cars were present before they visited the page and how long the current condition is expected to last. The smart phone app "Beat the Jam" went one step further and provides historic and predicted data on the time required to cross. However, as [they obtain this information from Google Maps](https://causewayjam.wordpress.com/2016/03/02/beat-the-jam-version-2-0-is-live/), it depends on crowd-sourced data and won't be as accurate as car counts obtained from real-time images.
 
-The goal of this project is to use deep learning and image processing techniques to extract information on traffic volume from traffic camera images obtained from the traffic cameras API. Due to time limitations, the scope of this project is currently limited to daytime traffic at the Tuas Checkpoint. 
+The goal of this project is to use deep learning and image processing techniques to extract real-time traffic volume from traffic camera images. This has the potential to complement existing solutions on the market to allow better representations of traffic situations. Due to time limitations, the scope of this project is currently limited to daytime traffic at the Tuas Checkpoint. 
 
 #### Folder Organisation:
 ---
@@ -37,7 +37,9 @@ The goal of this project is to use deep learning and image processing techniques
 
 #### Summary of Findings & Recommendations
 ---
-<img src="./graphics/background_sub.gif" width=400 align = 'center'>
+<p align="center">
+    <img src="./graphics/background_sub.gif" width=500>
+</p>
 
 The low resolution of the images hindered the training of an object detection model. As such, in this project I used a background subtraction algorithm (as shown in the figure above) followed by several machine learning and deep learning approaches to predict the number of cars in each image.
 
