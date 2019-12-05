@@ -21,6 +21,7 @@ The goal of this project is to use deep learning and image processing techniques
     |   |__ yval.zip
     |   |__ ytest.zip
     |__ graphics
+    |   |__ background_sub_pred.gif
     |   |__ deployment.png
     |   |__ labeller_example.png
     |   |__ traffic_cameras_map.png
